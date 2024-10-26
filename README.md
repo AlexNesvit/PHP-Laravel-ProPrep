@@ -78,6 +78,34 @@ php artisan serve
 
 Ouvrez votre navigateur et accédez à http://localhost:8000. Si vous voyez la page de bienvenue de Laravel, tout est correctement configuré !
 
+---
+
+# Structure du Projet Laravel
+
+Ce projet suit la structure standard de Laravel. Voici un aperçu rapide des dossiers principaux et de leur contenu.
+
+## Dossiers principaux
+
+- **app/** : Contient la logique principale de l'application, y compris les contrôleurs, les modèles et les services.
+- **bootstrap/** : Dossier qui initialise l'application Laravel, notamment le fichier `app.php` qui prépare le lancement de l'application.
+- **config/** : Dossier de configuration de l'application, contenant des fichiers pour configurer la base de données, la messagerie, les services tiers, etc.
+- **database/** : Contient les migrations, les seeds, et parfois les factories pour configurer les tables de la base de données.
+- **public/** : Ce dossier expose les fichiers publics (comme `index.php`), et héberge les ressources accessibles directement, telles que les images et les assets CSS/JavaScript.
+- **resources/** : Contient les vues Blade (HTML), les assets non compilés (CSS, JavaScript), et les fichiers de traduction.
+- **routes/** : Ici se trouvent tous les fichiers de routes. Par défaut, `web.php` et `api.php` définissent les routes pour le web et l'API.
+- **storage/** : Utilisé pour stocker les logs, les fichiers de cache, les téléchargements utilisateur, et autres données temporaires.
+- **tests/** : Contient les tests unitaires et fonctionnels de l'application. Par défaut, il y a les sous-dossiers `Feature` et `Unit`.
+- **vendor/** : Crée par Composer, ce dossier contient toutes les dépendances du projet (comme Laravel lui-même).
+
+## Fichiers principaux
+
+- **artisan** : Interface en ligne de commande de Laravel pour gérer diverses tâches (migrations, tests, etc.).
+- **composer.json** : Fichier de configuration de Composer, où sont définies les dépendances PHP du projet.
+- **.env** : Fichier de configuration des variables d'environnement (base de données, mail, etc.).
+- **server.php** : Fichier permettant de lancer le serveur PHP intégré pour les tests locaux.
+- **README.md** : Documentation du projet, avec instructions pour l'installation et la configuration.
+
+---
 
 ## Auteur
 
