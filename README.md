@@ -48,6 +48,35 @@ Si laravel ne fonctionne pas, vous pouvez aussi utiliser:
 ```bash
     composer create-project laravel/laravel php-laravel-proprep
 ```
+## Configuration de la connexion à la base de données
+
+Ouvrez le fichier .env et spécifiez les paramètres de connexion à la base de données. Si vous utilisez MySQL, la configuration peut ressembler à ceci :
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=php_laravel_proprep
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+3. Lancer les migrations de la base de données
+
+Maintenant que la base de données est configurée, créez les tables nécessaires en exécutant les migrations :
+```bash
+php artisan migrate
+```
+
+4. Démarrer le serveur local pour les tests
+
+Pour vérifier que Laravel fonctionne, lancez le serveur intégré :
+```bash
+php artisan serve
+```
+
+5. Vérifiez le projet
+
+Ouvrez votre navigateur et accédez à http://localhost:8000. Si vous voyez la page de bienvenue de Laravel, tout est correctement configuré !
 
 
 ## Auteur
