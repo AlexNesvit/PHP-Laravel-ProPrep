@@ -48,10 +48,10 @@ Si laravel ne fonctionne pas, vous pouvez aussi utiliser:
 ```
 
 
-## Auteur:
+## Auteur
 
 Alex NESVIT — Développeur du projet.
 
-## Licence:
+## Licence
 
 Ce projet est sous licence MIT.
