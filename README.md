@@ -33,22 +33,24 @@ Ce projet est une plateforme de préparation aux entretiens pour les développeu
 ### Étapes pour créer et configurer le projet
 
 1. **Installez Laravel globalement via Composer**
-   ```bash
-   composer global require laravel/installer
+```bash
+   composer global require laravel/installer 
+```
+2.	Créez un nouveau projet Laravel dans le répertoire souhaité
 
-	2.	Créez un nouveau projet Laravel dans le répertoire souhaité
 Accédez au répertoire où vous souhaitez créer le projet, puis exécutez:
-    ```bash
+```bash
    laravel php-laravel-proprep
-
+```
 Si laravel ne fonctionne pas, vous pouvez aussi utiliser:
-    ```bash
+```bash
     composer create-project laravel/laravel nom_du_projet
+```
 
 
 ## Auteur:
 
-	•	Alex NESVIT — Développeur du projet.
+Alex NESVIT — Développeur du projet.
 
 ## Licence:
 
