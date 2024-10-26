@@ -1,5 +1,7 @@
 ## 🟣 Plateforme de Préparation aux Entretiens PHP + Laravel 🟣
 
+**[Описание на русском языке](README_ru.md)**
+
 Ce projet est une plateforme de préparation aux entretiens pour les développeurs PHP. Elle propose des ressources théoriques, des quiz et des exercices pratiques pour aider les utilisateurs à se préparer efficacement aux entretiens. Ce projet est également conçu comme un outil d'apprentissage pour maîtriser Laravel, PHP, la programmation orientée objet (POO), et l'architecture MVC.
 
 
