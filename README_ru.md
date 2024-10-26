@@ -43,10 +43,41 @@
 ```bash
 laravel new php-laravel-proprep
 ```
+
 Если laravel new не работает, можно использовать:
 ```bash
 composer create-project laravel/laravel php-laravel-proprep
 ```
+
+Настрой подключение к базе данных:
+Открой файл .env и укажи параметры для базы данных. Если используешь MySQL, настройки будут примерно такими:
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=php_laravel_proprep
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+3. Запусти миграции базы данных:
+Теперь, когда база данных настроена, создадим основные таблицы, используя миграции:
+```bash
+php artisan migrate
+```
+
+4. Запусти локальный сервер для проверки:
+Чтобы убедиться, что Laravel работает, запусти встроенный сервер:
+```bash
+php artisan serve
+```
+
+5. Проверь проект:
+Открой браузер и перейди по адресу http://localhost:8000. Если видишь приветственную страницу Laravel, значит, всё настроено правильно!
+
+
+---
+
 ## Автор
 
 Алекс Несвит — разработчик проекта.
