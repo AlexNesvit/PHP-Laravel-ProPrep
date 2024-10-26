@@ -44,7 +44,7 @@ Accédez au répertoire où vous souhaitez créer le projet, puis exécutez:
 ```
 Si laravel ne fonctionne pas, vous pouvez aussi utiliser:
 ```bash
-    composer create-project laravel/laravel nom_du_projet
+    composer create-project laravel/laravel php-laravel-proprep
 ```
 
 
