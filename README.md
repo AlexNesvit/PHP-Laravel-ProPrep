@@ -105,6 +105,18 @@ Ce projet suit la structure standard de Laravel. Voici un aperçu rapide des dos
 - **server.php** : Fichier permettant de lancer le serveur PHP intégré pour les tests locaux.
 - **README.md** : Documentation du projet, avec instructions pour l'installation et la configuration.
 
+## Maintenant que la base de données et le serveur sont configurés, passons aux étapes suivantes :
+
+	1.	Configurer l’authentification :
+Vous pouvez rapidement ajouter un système d’enregistrement et de connexion avec le package Laravel Breeze. Exécutez les commandes suivantes :
+```bash
+composer require laravel/breeze --dev
+php artisan breeze:install
+php artisan migrate
+npm install && npm run dev
+```
+Après cela, Laravel ajoutera les pages de base pour l’inscription, la connexion et la réinitialisation de mot de passe.
+
 ---
 
 ## Auteur
