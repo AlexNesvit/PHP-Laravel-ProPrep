@@ -118,6 +118,43 @@ npm install && npm run dev
 ```
 Après cela, Laravel ajoutera les pages de base pour l’inscription, la connexion et la réinitialisation de mot de passe.
 
+
+## Configurer le site avec le français comme langue par défaut
+
+Pour que tout l’interface Laravel, y compris les messages d’erreur et d’authentification, soit en français, voici les étapes à suivre :
+
+1. Définir le français comme langue par défaut
+
+Dans le fichier .env, configurez la langue par défaut (APP_LOCALE) sur le code fr :
+`APP_LOCALE=fr`
+
+2. Créer les fichiers de langue en français
+
+Laravel fournit par défaut les fichiers de traduction en anglais dans resources/lang/en. Pour afficher l’interface en français, créez un dossier resources/lang/fr et copiez-y tous les fichiers de resources/lang/en. Ensuite, traduisez les chaînes clés dans ces fichiers.
+
+Si le dossier lang n’existe pas dans resources, vous pouvez le créer manuellement :
+```bash
+mkdir -p resources/lang/fr
+```
+
+Exemple de traduction pour le fichier auth.php :
+```bash
+// resources/lang/fr/auth.php
+return [
+    'failed' => 'Les informations d\'identification ne sont pas correctes.',
+    'password' => 'Le mot de passe est incorrect.',
+    'throttle' => 'Trop de tentatives. Veuillez réessayer dans :seconds secondes.',
+];
+```
+3. Vider le cache de configuration
+
+Après avoir modifié .env et ajouté les fichiers de traduction, videz le cache de configuration pour que les modifications soient prises en compte :
+```bash
+php artisan config:cache
+```
+L’interface Laravel utilisera désormais le français par défaut pour les messages et éléments de l’interface. Si vous devez ajouter une nouvelle langue ou revenir à l’anglais, il vous suffit de modifier APP_LOCALE dans .env et d’ajouter les fichiers de traduction correspondants.
+
+
 ---
 
 ## Auteur
