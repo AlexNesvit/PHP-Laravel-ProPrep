@@ -154,7 +154,6 @@ php artisan config:cache
 ```
 L’interface Laravel utilisera désormais le français par défaut pour les messages et éléments de l’interface. Si vous devez ajouter une nouvelle langue ou revenir à l’anglais, il vous suffit de modifier APP_LOCALE dans .env et d’ajouter les fichiers de traduction correspondants.
 
-
 ---
 
 ## Auteur
