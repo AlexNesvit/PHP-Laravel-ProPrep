@@ -6,9 +6,13 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Affiche la page d'accueil de l'application.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
-        // Retourne la vue 'home' (Возвращает представление 'home')
         return view('home');
     }
 }

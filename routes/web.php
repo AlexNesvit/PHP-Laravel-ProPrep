@@ -3,9 +3,17 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+/* Pour lancer
 Route::get('/', function () {
     return view('welcome');
-});
+});   */
+
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+// Page d'accueil
+//Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
