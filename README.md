@@ -154,6 +154,30 @@ php artisan config:cache
 ```
 L’interface Laravel utilisera désormais le français par défaut pour les messages et éléments de l’interface. Si vous devez ajouter une nouvelle langue ou revenir à l’anglais, il vous suffit de modifier APP_LOCALE dans .env et d’ajouter les fichiers de traduction correspondants.
 
+## home.blade.php
+
+Dans le projet, un nouveau fichier home.blade.php a été créé pour servir de page d’accueil de l’application. Ce fichier est une version modifiée de la page d’accueil par défaut de Laravel et est adapté pour l’interface utilisateur, y compris les modifications du titre de la page et la traduction des éléments clés de l’interface en français.
+
+	•	Ajout du fichier home.blade.php : La page est utilisée comme page d’accueil principale avec une personnalisation de style.
+	•	Mise à jour du titre de la page : Le titre a été modifié pour afficher le nom personnalisé de l’application.
+
+Dans le code actuel, le titre de la page est défini comme `<title>Laravel</title>`.
+
+	•	Solution : Remplacez-le par le nom de votre application en utilisant les traductions.
+`<title>{{ __('messages.app_name') }}</title>`
+
+## Videz le cache et redémarrez le serveur
+```bash
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear 
+```
+
+## Puis redémarrez le serveur :
+```bash
+php artisan serve
+```
+
 ---
 
 ## Auteur
