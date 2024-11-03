@@ -158,6 +158,16 @@ php artisan config:cache
 	•	Решение: Замени его на название своего приложения, используя переводы.
 `<title>{{ __('messages.app_name') }}</title>`
 
+## Очисти кэш и перезапусти сервер
+```bash
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear 
+```
+## И перезапусти сервер:
+```bash
+php artisan serve
+```
 
 ---
 
