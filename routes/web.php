@@ -2,18 +2,34 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TheoryController;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\PracticeController;
 /* Pour lancer
 Route::get('/', function () {
     return view('welcome');
 });   */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-})->name('home');
+})->name('home');*/
 
 // Page d'accueil
 //Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/', function () {
+    return view('ok');
+});
+
+Route::get('/theory', [TheoryController::class, 'theory'])->name('theory');
+
+Route::get('/quizzes', [QuizController::class, 'quizzes'])->name('quizzes');
+
+Route::get('/tests', [TestController::class, 'tests'])->name('tests');
+
+
+Route::get('/practice', [PracticeController::class, 'practice'])->name('practice');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
