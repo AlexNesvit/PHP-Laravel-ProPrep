@@ -178,6 +178,80 @@ php artisan view:clear
 php artisan serve
 ```
 
+## JIRA
+
+Si tu gères également ton développement sur Jira, où les tâches sont organisées en sprints Scrum, voici quelques étapes pour intégrer cette information avec Git et garder de l’ordre dans le dépôt.
+
+	1.	Création de branches pour les tâches
+
+Chaque tâche dans Jira a souvent un ID unique, par exemple PROJECT-123. Pour chaque tâche, il est conseillé de créer une branche distincte avec un nom qui inclut cet ID. Cela aide à suivre quelle branche correspond à quelle tâche.
+```bash
+git checkout -b PROJECT-123-feature
+```
+	•	Ici, PROJECT-123 est l’ID de la tâche Jira, et feature est une brève description de ce que tu fais.
+	•	Cela simplifie la navigation si les tâches suivent une convention de nommage cohérente.
+
+	2.	Utilisation de commits liés aux tâches Jira
+
+Quand tu fais un commit, ajoute l’ID de la tâche dans le message de commit, par exemple :
+```bash
+git commit -m "PROJECT-123 : ajout de la prise en charge d’une nouvelle fonction"
+```
+	•	Un tel message permet de comprendre rapidement à quelle tâche se réfère le commit.
+	•	De nombreuses plateformes (Bitbucket, GitHub) permettent d’intégrer Jira pour que les liens mènent directement à la tâche.
+
+	3.	Création de Pull Request (PR) avec mention de Jira
+
+Quand une tâche est terminée, crée un PR en incluant l’ID de la tâche dans la description :
+
+	•	Titre du PR : PROJECT-123 : Implémentation de la fonctionnalité X
+	•	Description du PR : Indique brièvement ce qui a été fait en mentionnant la tâche Jira, pour que les reviewers comprennent le contexte.
+
+Créer une branche directement depuis une tâche Jira est une bonne pratique, surtout si ton équipe utilise l’intégration Jira et Git (par exemple Bitbucket, GitHub ou GitLab). Cette approche présente plusieurs avantages :
+
+	1.	Association automatique de la tâche :
+En créant une branche à partir de Jira, elle aura automatiquement un nom incluant l’ID de la tâche, par exemple, PROJECT-123-feature. Cela aide à maintenir la structure des branches et à les associer immédiatement aux tâches correspondantes.
+	2.	Suivi simplifié de l’avancement :
+Jira associe automatiquement les commits, PR et branches à la tâche, donc toutes les informations s’affichent au même endroit, simplifiant le suivi.
+	3.	Réduction du risque d’erreurs de nommage :
+Nommer manuellement les branches avec les ID des tâches peut prêter à erreur. Jira génère automatiquement un nom avec le bon ID, ce qui évite les erreurs.
+	4.	Uniformité des noms de branches :
+Tous les membres de l’équipe, en créant des branches via Jira, suivent un format cohérent, rendant le dépôt plus structuré et lisible.
+
+Quand utiliser cette fonctionnalité
+
+	•	Si l’équipe travaille activement avec Jira et que tous les membres ont accès à Jira pour gérer les tâches.
+	•	Si toutes les tâches sont distribuées par sprint et que chaque membre connaît ses tâches assignées.
+	•	Si une intégration entre Jira et le dépôt est en place, cela facilite la gestion des branches et le suivi des tâches.
+
+Comment cela fonctionne
+
+	1.	Sélectionnez une tâche dans Jira et cliquez sur le bouton « Créer une branche ».
+	2.	Jira vous propose de choisir le dépôt et génère automatiquement un nom de branche basé sur l’ID de la tâche.
+	3.	Une fois la branche créée, elle apparaîtra dans votre dépôt Git et sera associée à la tâche Jira.
+
+Exemple de scénario
+
+	1.	Tâche dans Jira : Supposons que vous ayez la tâche PROJECT-123 : Implémentation de l'authentification.
+	2.	Création de la branche via Jira : Vous cliquez sur « Créer une branche » pour la tâche PROJECT-123.
+	3.	La branche générée sera PROJECT-123-authentication.
+	4.	Les commits et PR dans cette branche seront automatiquement liés à la tâche PROJECT-123.
+
+Conclusion
+
+Créer une branche directement depuis une tâche Jira permet de maintenir l’ordre, réduit le risque d’erreurs et rend les processus plus transparents. C’est un moyen efficace d’organiser le travail, surtout dans des équipes qui utilisent Jira pour la gestion des tâches.
+```bash
+git push --set-upstream origin SCRUM-7-menu-accuelle
+```
+Cette commande va pousser la branche actuelle vers le dépôt distant et l’établir en tant que branche upstream, permettant l’utilisation simple de git push pour les prochains commits.
+
+Pour lier automatiquement les nouvelles branches au dépôt distant lors du premier push, tu peux activer l’option :
+```bash
+git config --global push.autoSetupRemote true
+```
+Ainsi, lors du premier push d’une nouvelle branche, la commande git push configurera automatiquement l’upstream sans étapes supplémentaires.
+
+
 ---
 
 ## Auteur
