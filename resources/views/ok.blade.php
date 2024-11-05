@@ -13,7 +13,7 @@
         
         <!-- Кнопка "Поддержите проект" -->
         <div class="bg-yellow-500 text-white text-center py-4">
-            <a href="https://www.buymeacoffee.com/yourusername" target="_blank" class="text-white font-semibold">
+            <a href="https://www.buymeacoffee.com/alexnesvit" target="_blank" class="text-white font-semibold">
                 {{ __('messages.support_project') }}
             </a>
         </div>
