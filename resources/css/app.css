@@ -1,3 +1,88 @@
-@tailwind base;
+/*@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;*/
+
+
+/* Fond de la page en noir */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D0D24 !important; /* Couleur de fond noire */
+    color: #FFFFFF; /* Couleur de texte blanche par défaut */
+}
+
+/* Conteneur pour centrer les cartes */
+.container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+}
+
+/* Style pour les cartes */
+.card {
+    background-color: #2E0259; /* Couleur de fond violet foncé */
+    border-radius: 10px; /* Bords arrondis */
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre pour effet de profondeur */
+    color: #FFFFFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour effet au survol */
+}
+
+/* Interaction au survol */
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation de la carte */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Augmente l'ombre pour accentuer l'effet */
+}
+
+/* Style pour les titres des cartes */
+.card h2 {
+    color: #FF00FF; /* Couleur rose pour les titres */
+}
+
+/* Formulaires et éléments de saisie dans les cartes */
+.card form, .card ul {
+    text-align: left;
+}
+
+.card label, .card input, .card select, .card button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #4B0082; /* Couleur de fond violet pour les éléments de saisie */
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/* Style pour le bouton */
+.card button {
+    background-color: #FF00FF; /* Couleur rose pour le bouton */
+    color: #0D0D24;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transition pour l'effet au survol */
+}
+
+/* Effet de survol pour le bouton */
+.card button:hover {
+    background-color: #FF69B4; /* Couleur rose clair au survol */
+}
+
+/* Style pour les éléments de la liste */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
