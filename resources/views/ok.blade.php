@@ -73,7 +73,7 @@
 
         <!-- Футер с ненавязчивой ссылкой на BuyMeACoffee -->
         <footer class="py-6 text-center text-sm text-gray-500 dark:text-gray-400">
-            {{ __('messages.thank_you') }} | <a href="https://www.buymeacoffee.com/yourusername" target="_blank" class="underline">{{ __('messages.support_project') }}</a>
+            {{ __('messages.thank_you') }} | <a href="https://www.buymeacoffee.com/alexnesvit" target="_blank" class="underline">{{ __('messages.support_project') }}</a>
         </footer>
     </body>
 </html>
