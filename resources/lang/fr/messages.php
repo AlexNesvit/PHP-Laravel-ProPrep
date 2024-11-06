@@ -20,5 +20,6 @@ return [
     'practice_desc' => 'Description des tâches pratiques',
     'try_now' => 'Essayez maintenant',
     'thank_you' => 'Merci beaucoup',
+    'logged_in' => 'Vous êtes connecté !',
     // Добавьте другие строки по мере необходимости
 ];
