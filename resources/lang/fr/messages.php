@@ -6,7 +6,7 @@ return [
     'intro_text'       => 'Cette plateforme vous aidera à vous préparer efficacement aux entretiens techniques en PHP.',
     'app_name' => 'Plateforme de Préparation aux Entretiens PHP',
     'welcome_ok_page' => 'Bienvenue sur la plateforme de préparation aux entretiens PHP',
-    'support_project' => 'Soutenir le projet',
+    'support_project' => 'Cliquez ici pour soutenir le projet !',
     'theory' => 'Théorie',
     'theory_desc' => 'Description de la théorie',
     'learn_more' => 'En savoir plus',
