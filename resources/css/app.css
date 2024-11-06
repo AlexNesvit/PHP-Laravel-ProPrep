@@ -1,3 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Couleur de fond noire pour le corps de la page */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style pour le titre de la plateforme */
+.header h1 {
+    color: #FF00FF; /* Couleur du titre en rose */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px; /* Espace pour centrer le titre en haut */
+    margin-bottom: 50px; /* Espace entre le titre et les cartes */
+}
+
+/* Conteneur principal pour centrer les éléments */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centre verticalement tout le contenu */
+}
+
+/* Conteneur pour les cartes avec espace et style responsive */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour les cartes */
+    gap: 30px; /* Espace entre les cartes */
+   /* row-gap: 40px;  Espace vertical entre les rangées */
+    justify-items: center;
+}
+
+/* Style des cartes */
+.card {
+    background-color: #2E0259; /* Couleur de fond violette foncée pour les cartes */
+    border-radius: 10px;
+    padding: 30px 20px; /* Agrandir les cartes pour un format plus allongé */
+    width: 320px; /* Largeur pour un format plus rectangulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    margin-bottom: 20px; /* Espacement vertical entre les cartes */
+}
+
+.card:last-child {
+    margin-bottom: 0; /* Supprime le dernier espacement dans la colonne */
+}
+/* Effet de survol sur les cartes */
+.card:hover {
+    transform: scale(1.05); /* Augmentation de la taille au survol */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Ombre lumineuse */
+}
+
+/* Style pour les liens de navigation */
+.nav-link {
+    color: #4B0082; /* Couleur pour les liens de navigation */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Style pour les boutons et les liens dans les cartes */
+.card a {
+    color: #FF69B4; /* Couleur rose clair pour les liens */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #FF00FF; /* Couleur rose vif au survol */
+}
+
+/* Style pour le bouton de soutien du projet */
+.support-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #FF69B4; /* Couleur rose pour le bouton de soutien */
+    color: #0D0D24;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style pour le pied de page */
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #FF69B4;
+    padding: 10px;
+}
