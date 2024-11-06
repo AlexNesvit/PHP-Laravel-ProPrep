@@ -19,7 +19,7 @@ Route::get('/', function () {
 //Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
-    return view('ok');
+    return view('welcome');
 });
 
 Route::get('/theory', [TheoryController::class, 'theory'])->name('theory');

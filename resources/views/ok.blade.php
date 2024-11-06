@@ -24,8 +24,8 @@
     <!-- Utilisation de la mise en page principale de l'application -->
     <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
                         <!-- Bouton de soutien du projet -->
-                <div class="bg-yellow-500 text-white text-center py-4">
-                    <a href="https://www.buymeacoffee.com/alexnesvit" target="_blank" class="text-white font-semibold">
+                <div class="bg-white dark:bg-gray-800 text-white text-center py-4">
+                    <a href="https://www.buymeacoffee.com/alexnesvit" target="_blank" class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                     {{ __('messages.support_project') }}
                     </a>
                 </div>
