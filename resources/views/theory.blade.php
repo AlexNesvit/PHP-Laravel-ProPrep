@@ -1,3 +1,3 @@
 <!-- resources/views/theory.blade.php -->
-<h1>Теоретический материал</h1>
-<p>Здесь будет контент для теоретической страницы.</p>
+<h1>Matériel théorique</h1>
+<p>Ici, vous trouverez le contenu pour la page théorique.</p>
