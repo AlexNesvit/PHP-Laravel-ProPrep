@@ -1,3 +1,3 @@
 <!-- resources/views/tests.blade.php -->
-<h1>Страница Тестов</h1>
-<p>Здесь будут отображаться тесты.</p>
+<h1>Page des Tests</h1>
+<p>Ici seront affichés les tests.</p>

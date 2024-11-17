@@ -1,3 +1,3 @@
 <!-- resources/views/practice.blade.php -->
-<h1>Практические задания</h1>
-<p>Здесь будут отображаться практические задачи для выполнения.</p>
+<h1>Exercices pratiques</h1>
+<p>Ici seront affichées les tâches pratiques à réaliser.</p>
