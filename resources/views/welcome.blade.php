@@ -178,8 +178,9 @@
 
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         {{ __('messages.thank_you') }} | <a href="https://www.buymeacoffee.com/alexnesvit" target="_blank"
-                        class="underline"></a>
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        class="underline">
+                        {{ __('messages.support_project') }}
+                        </a>
                     </footer>
                 </div>
             </div>
