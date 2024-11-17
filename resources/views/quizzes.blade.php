@@ -1,3 +1,3 @@
 <!-- resources/views/quizzes.blade.php -->
-<h1>Страница Квизов</h1>
-<p>Здесь будут отображаться квизы.</p>
+<h1>Page des Quiz</h1>
+<p>Ici seront affichés les quiz.</p>
