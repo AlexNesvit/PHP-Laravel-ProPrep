@@ -6,6 +6,7 @@ use App\Http\Controllers\TheoryController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\PracticeController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 /* Pour lancer
 Route::get('/', function () {
     return view('welcome');
@@ -21,6 +22,8 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
 Route::get('/theory', [TheoryController::class, 'theory'])->name('theory');
 
