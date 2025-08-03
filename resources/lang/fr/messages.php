@@ -5,7 +5,7 @@ return [
     'welcome_message'  => 'Bienvenue sur la plateforme de préparation aux entretiens PHP',
     'intro_text'       => 'Cette plateforme vous aidera à vous préparer efficacement aux entretiens techniques en PHP.',
     'app_name' => 'Plateforme de Préparation aux Entretiens PHP',
-    'welcome_ok_page' => 'Bienvenue sur la plateforme de préparation aux entretiens PHP',
+    'welcome_ok_page' => 'Bienvenue sur la plateforme de préparation aux entretiens PHP + Laravel',
     'support_project' => 'Cliquez ici pour soutenir le projet !',
     'theory' => 'Théorie',
     'theory_desc' => 'Description de la théorie',
